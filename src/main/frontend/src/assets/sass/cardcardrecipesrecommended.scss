@@ -6,24 +6,25 @@ h3 {
 }
 
 section {
-  width: 48%;
-  background-color: white;
-  margin-bottom: 30px;
+  width: 31%;
+  height: 177px;
+  margin-top: -88px;
   figure {
     img {
-      width: 100%;
-      aspect-ratio: 16/5;
+      width: 177px;
+      aspect-ratio: 1/1;
       object-fit: cover;
       transition: all 0.4s;
     }
   }
   .info {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 100%;
-    p {
-      margin-bottom: 50px;
-    }
+    height: 177px;
   }
 
   .starters {
@@ -38,31 +39,24 @@ section {
   .desserts {
     background: $background-four;
   }
-
-  .color-starters {
-    color: $background-one;
-  }
-  .color-first-courses {
-    color: $background-two;
-  }
-  .color-second-courses {
-    color: $background-three;
-  }
-  .color-desserts {
-    color: $background-four;
-  }
-
   .button {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
-    width: auto;
-    border: none;
+    left: 30%;
+    bottom: -39px;
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all 0.4s;
     &:hover {
       background: $color-green;
-    }
-    a {
-      color: white; 
     }
   }
 }
@@ -72,6 +66,13 @@ section:hover {
     img {
       filter: brightness(125%);
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    width: 50%;
+    margin-bottom: 150px;
   }
 }
 

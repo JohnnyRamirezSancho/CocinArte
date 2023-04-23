@@ -1,4 +1,7 @@
 <script setup>
+import router from '../../router';
+import { RouterLink } from 'vue-router';
+
 const props = defineProps({
   option: {
     type: String,
@@ -7,6 +10,7 @@ const props = defineProps({
     type: String,
   },
 });
+
 </script>
 
 <template>
@@ -23,11 +27,12 @@ const props = defineProps({
         varius felis ac enim congue luctus. Interdum et malesuada fames ac ante
         ipsum primis in faucibus.
       </p>
-      <button :class="`button btn btn-primary ${option}`">ver más</button>
+      <button :class="`button btn btn-primary ${option}`"><RouterLink :to="`/receta/1`">ver más</RouterLink></button>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
+@import "../../assets/sass/styles.scss";
 @import "../../assets/sass/cardsourrecommendedmenuhome.scss";
 </style>

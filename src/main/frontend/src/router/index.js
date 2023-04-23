@@ -19,6 +19,12 @@ const router = createRouter({
        name: 'section',
        props: true,
        component: () => import('../views/Section.vue')
+     },
+     {
+       path: '/receta/:id',
+       name: 'recipe',
+       props: true,
+       component: () => import('../views/Recipe.vue')
      }
   ]
 })

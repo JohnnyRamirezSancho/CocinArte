@@ -1,3 +1,7 @@
+<script setup>
+import router from '../../router';
+
+</script>
 <template>
   <header>
     <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
