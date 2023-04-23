@@ -1,35 +1,26 @@
 <script setup>
-import router from "../../router/index"
+import CardOurRecommendedRecipeHome from "./CardOurRecommendedRecipeHome.vue"
 
-const props = defineProps({
-  option: {
-    type: String,
-  },
-  text: {
-    type: String,
-  },
-  id: {
-    type: Number,
-  },
-})
+let options = [
+  "starters",
+  "first-courses",
+  "second-courses",
+  "desserts"
+]
 
-function goSection(section) {
-  router.push("/seccion/" + section);
-}
 </script>
 
 <template>
-  <section class="d-flex">
-    <figure>
-      <img :src="`./src/assets/img/${option}.jpg`" alt="" />
-    </figure>
-    <div :class="`info  ${option}`">
-      <h3>{{ text }}</h3>
-      <div :class="`info button ${option}`" @click="goSection(id)">&gt;</div>
+  <article>
+    <h2>¿Te animas con otras recetas?</h2>
+    <div class="ourRecommendedMenu d-flex flex-wrap justify-content-between">
+      <CardOurRecommendedRecipeHome :option="options[0]"></CardOurRecommendedRecipeHome>
+      <CardOurRecommendedRecipeHome :option="options[1]"></CardOurRecommendedRecipeHome>
+      <CardOurRecommendedRecipeHome :option="options[2]"></CardOurRecommendedRecipeHome>
     </div>
-  </section>
+  </article>
 </template>
 
 <style lang="scss" scoped>
-@import "../../assets/sass/cardsectionshome.scss";
+@import "../../assets/sass/menurecipesrecommended.scss";
 </style>

@@ -59,6 +59,7 @@ article {
   margin: 50px auto;
   img {
     width: 33.3%;
+    object-fit: cover;
   }
   .ingredients {
     width: 66.6%;
@@ -68,6 +69,17 @@ article {
   .steps {
     width: 100%;
     padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  article {
+    flex-direction: column;
+    img {
+      width: 100%;
+      aspect-ratio: 16/5;
+      margin-bottom: 20px;
+    }
   }
 }
 </style>

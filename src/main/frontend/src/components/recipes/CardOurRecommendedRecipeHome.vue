@@ -13,23 +13,20 @@ const props = defineProps({
   },
 })
 
-function goSection(section) {
-  router.push("/seccion/" + section);
-}
 </script>
 
 <template>
-  <section class="d-flex">
+  <section>
     <figure>
-      <img :src="`./src/assets/img/${option}.jpg`" alt="" />
+      <img src="../../assets/img/ensalada-marisco.jpg" alt="" />
     </figure>
     <div :class="`info  ${option}`">
-      <h3>{{ text }}</h3>
-      <div :class="`info button ${option}`" @click="goSection(id)">&gt;</div>
+      <h3>Pan con chocolate</h3>
+      <div :class="`info button ${option}`">ver más</div>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-@import "../../assets/sass/cardcardrecipesrecommended.scss";
+@import "../../assets/sass/cardrecipesrecommended.scss";
 </style>
