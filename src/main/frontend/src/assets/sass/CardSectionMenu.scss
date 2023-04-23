@@ -1,0 +1,90 @@
+@import "./variables.scss";
+
+h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+section {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 30px;
+  figure {
+    width: 30%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s;
+    }
+  }
+  .info {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+
+  .starters {
+    background: $background-one;
+  }
+  .first-courses {
+    background: $background-two;
+  }
+  .second-courses {
+    background: $background-three;
+  }
+  .desserts {
+    background: $background-four;
+  }
+
+  .color-starters {
+    color: $background-one;
+  }
+  .color-first-courses {
+    color: $background-two;
+  }
+  .color-second-courses {
+    color: $background-three;
+  }
+  .color-desserts {
+    color: $background-four;
+  }
+
+  .button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: auto;
+    border: none;
+    &:hover {
+      background: $color-green;
+    }
+  }
+}
+
+section:hover {
+  figure {
+    img {
+      filter: brightness(125%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    width: 100%;
+    figure {
+      width: 100%;
+      img {
+        aspect-ratio: 16/5;
+        object-fit: cover;
+        transition: all 0.4s;
+      }
+    }
+  
+  }
+}

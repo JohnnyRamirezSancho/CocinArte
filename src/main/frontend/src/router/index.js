@@ -9,11 +9,17 @@ const router = createRouter({
       name: 'home',
       component: HomeView
      },
-    {
-      path: '/porsecciones',
-      name: 'bysections',
-      component: () => import('../views/BySections.vue')
-    }
+     {
+       path: '/porsecciones',
+       name: 'bysections',
+       component: () => import('../views/BySections.vue')
+     },
+     {
+       path: '/seccion/:id',
+       name: 'section',
+       props: true,
+       component: () => import('../views/Section.vue')
+     }
   ]
 })
 

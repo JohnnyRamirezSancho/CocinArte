@@ -11,5 +11,5 @@ import { RouterLink } from "vue-router";
 </template>
 
 <style lang="scss" scoped>
-@import "../../assets/sass/menusectionshome.scss";
+@import "../assets/sass/menusectionshome.scss";
 </style>

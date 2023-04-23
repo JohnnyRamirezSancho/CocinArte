@@ -1,6 +1,4 @@
 <script setup>
-import { computed } from '@vue/reactivity';
-
 const props = defineProps({
   option: {
     type: String,
@@ -9,8 +7,6 @@ const props = defineProps({
     type: String,
   },
 })
-
-
 </script>
 
 <template>
