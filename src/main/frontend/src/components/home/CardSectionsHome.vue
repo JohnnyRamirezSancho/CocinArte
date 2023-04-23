@@ -1,4 +1,6 @@
 <script setup>
+import router from "../../router/index"
+
 const props = defineProps({
   option: {
     type: String,
@@ -6,7 +8,14 @@ const props = defineProps({
   text: {
     type: String,
   },
+  id: {
+    type: Number,
+  },
 })
+
+function goSection(section) {
+  router.push("/seccion/" + section);
+}
 </script>
 
 <template>
@@ -16,7 +25,7 @@ const props = defineProps({
     </figure>
     <div :class="`info  ${option}`">
       <h3>{{ text }}</h3>
-      <div :class="`info button ${option}`">&gt;</div>
+      <div :class="`info button ${option}`" @click="goSection(id)">&gt;</div>
     </div>
   </section>
 </template>

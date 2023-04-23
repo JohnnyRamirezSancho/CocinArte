@@ -18,9 +18,9 @@ let options = [
 
 <template>
   <article class="d-flex justify-content-between flex-wrap">
-    <CardSectionsHome :option="options[0]" :text="texts[0]"></CardSectionsHome>
-    <CardSectionsHome :option="options[1]" :text="texts[2]"></CardSectionsHome>
-    <CardSectionsHome :option="options[3]" :text="texts[3]"></CardSectionsHome>
+    <CardSectionsHome :id="0" :option="options[0]" :text="texts[0]"></CardSectionsHome>
+    <CardSectionsHome :id="1" :option="options[1]" :text="texts[1]"></CardSectionsHome>
+    <CardSectionsHome :id="3" :option="options[3]" :text="texts[3]"></CardSectionsHome>
   </article>
 </template>
 
