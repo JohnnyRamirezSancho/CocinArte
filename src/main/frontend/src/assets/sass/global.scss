@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +7,14 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+body {
     font-family: $font-family;
+    color: $color-principal;
+    background-color: $background-body;
+}
+
+h2 {
+    color: $color-green;
 }

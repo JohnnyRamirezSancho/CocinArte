@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+h2 {
+  color: $color-green;
+  font-size: 3rem;
+}
+
+footer {
+  margin: 30px auto 0 auto;
+  background: white;
+  padding: 40px 20px 40px 20px;
+  & > * {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  img {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+  p {
+    max-width: 800px;
+  }
+
+  .copy {
+    margin-top: 1rem;
+    color: $color-green;
+    font-size: 2rem;
+  }
+}

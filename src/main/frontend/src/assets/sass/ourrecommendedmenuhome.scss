@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+h2 {
+    color: $color-green;
+    font-size: 3rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+article {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 70px;
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  article {
+    margin-top: -80px;
+  }
+}

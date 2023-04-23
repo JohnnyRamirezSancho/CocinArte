@@ -1,0 +1,23 @@
+@import "./styles.scss";
+article {
+  padding: 20px;
+  background-color: $background-special;
+  max-width: 1200px;
+  margin: auto;
+  transition: all 0.4s;
+  a {
+    color: $color-button-special;
+    font-size: 2.5rem;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

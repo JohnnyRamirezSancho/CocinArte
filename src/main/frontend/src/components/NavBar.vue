@@ -28,20 +28,9 @@ import { RouterLink } from "vue-router";
           <li class="nav-item">
             <RouterLink class="nav-link" to="/">Inicio</RouterLink>
           </li>
-
           <li class="nav-item">
-            <RouterLink to="/porcategorias" class="nav-link"
-              >Por categorías</RouterLink
-            >
-          </li>
-          <li class="nav-item">
-            <RouterLink to="/porproducto" class="nav-link"
-              >Por producto</RouterLink
-            >
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/registrarse"
-              >Registrarse</RouterLink
+            <RouterLink to="/porsecciones" class="nav-link"
+              >Por secciones</RouterLink
             >
           </li>
           <li class="nav-item">
