@@ -25,8 +25,23 @@ const router = createRouter({
        name: 'recipe',
        props: true,
        component: () => import('../views/Recipe.vue')
+     },
+     {
+       path: '/acceso',
+       name: 'access',
+       props: true,
+       component: () => import('../views/Access.vue')
      }
   ]
 })
+
+// router.beforeEach(async (to, from) => {
+//   const auth = useAuthStore();
+//   if (to.meta.requiresAuth && !auth.isAuthenticate) {
+//     return { name: "home" };
+//   }
+// });
+
+// meta: { requiresAuth: true },
 
 export default router
