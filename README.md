@@ -96,7 +96,7 @@ Desde la carpeta frontend:
 
 ### Base de datos
 
-<a href="https://yquetecuentas.com/f5/cocinarte/ddbb.jpg" target="_blank"><img src="https://yquetecuentas.com/f5/cocinarte/ddbb.jpg" alt="DDBB" width="150"></a>   
+<a href="https://lh3.googleusercontent.com/drive-viewer/AFGJ81r7nc4BVFeVi-WNkFzTFOq8l2PJsH-4yzLfmppD1pHlVz9bdDnRdzGfqWbhxBgbmbv-VmuEypkplJ1xS6RoyXywTg6hhA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81r7nc4BVFeVi-WNkFzTFOq8l2PJsH-4yzLfmppD1pHlVz9bdDnRdzGfqWbhxBgbmbv-VmuEypkplJ1xS6RoyXywTg6hhA=s1600" width="150" /> </a>   
 
 
 ### Autor
